@@ -12,6 +12,7 @@ namespace RodriguezJ_APIConnection.Repositories
             _httpClient = new HttpClient();
         }
 
+        //We use a library of Nuggets called Newtonsoft
         public async Task <IEnumerable<Country>> GetCountryList()
         {
             string url = "https://restcountries.com/v3.1/all";
